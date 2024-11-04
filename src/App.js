@@ -2,19 +2,30 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const data=[{name:'sarath',rollno:51,gender:'male'},
-    {name:'aswin',rollno:12,gender:'male'},
-    {name:'saleem',rollno:48,gender:'male'},
-    {name:'anshad',rollno:36,gender:'male'}]
-
+ 
   
   return (
-    <div className="App">
-      <h1>Names</h1>
-      <ul>
-        {data.map((items)=>
-        <li>{items.name}{items.rollno}</li>)}
-      </ul>
+    <div>
+      <header className="App-header">
+        <h1>Registration Form </h1>
+        <form>
+        <label>FirstName:</label>
+        <input type='text'></input>
+        <br></br>
+        <label>LastName:</label>
+        <input type='text'></input>
+        <br></br>
+        <label>UserEmail:</label>
+        <input type='text'></input>
+        <br></br>
+
+        <label></label>
+        <label>Password:</label>
+        <input type='password'></input>
+        <br></br>
+        <input type="submit" value="Submit" />
+      </form>
+      </header>
     </div>
   );
 }
