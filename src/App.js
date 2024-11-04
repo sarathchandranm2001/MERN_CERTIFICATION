@@ -1,5 +1,5 @@
 import './App.css';
-import Signup1 from './Signup1';
+import Statehandling from './Statehandling';
 
 
 
@@ -8,7 +8,7 @@ function App() {
   
   return (
    <div className="sign-up-container">
-    <Signup1/>
+    <Statehandling/>
     
     </div>
   );
