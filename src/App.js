@@ -2,21 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const isBussMissed=true;
+  let mess;
+  if(isBussMissed){
+    mess=<p>Take auto</p>
+  }else{
+    mess=<p>Take bus</p>
+  }
   return (
     <div className="App">
+      <div>
+        {mess}
+      </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
       </header>
     </div>
   );
