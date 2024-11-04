@@ -2,17 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const isBussMissed=true;
-  let mess;
-  if(isBussMissed){
-    mess=<p>Take auto</p>
-  }else{
-    mess=<p>Take bus</p>
-  }
+  const obtainedMark = 70;
+  const passMark = 60;
+
+  const ifPass = obtainedMark > passMark ? (<button>PassButton</button>) : (<button>FailButton</button>);
+
+  
   return (
     <div className="App">
       <div>
-        {mess}
+        {ifPass}
       </div>
       <header className="App-header">
         <h1>Header 1</h1>
