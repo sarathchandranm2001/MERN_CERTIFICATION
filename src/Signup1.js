@@ -13,7 +13,7 @@ function Signup() {
   const handleInputchange=(event)=>{//
     const{name,value}=event.target;//we are getting the name and value of the input field
     setFormData((prevData) => ({ ...prevData, [name]: value }))    //we are updating the current data with the new
-
+//... shallow copy (without affecting original data ,previous data is copied)
     }
     const handleSubmit=(event)=>{
     event.preventDefault()
@@ -21,7 +21,7 @@ function Signup() {
   }
   return (
     <div className='Signp'>
-      <header className="App-header">
+      <header className="">
         <h1>Registration Form</h1>
         <form onSubmit={handleSubmit}>
           <label>FirstName:</label>
