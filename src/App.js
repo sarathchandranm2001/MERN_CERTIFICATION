@@ -1,5 +1,6 @@
 import './App.css';
-import Counter from './Counter';
+import Amazonlogin1 from './Amazonlogin1';
+
 
 
 
@@ -8,7 +9,7 @@ function App() {
   
   return (
    <div className="sign-up-container">
-    <Counter/>
+    <Amazonlogin1/>
     
     </div>
   );
